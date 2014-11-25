@@ -1,0 +1,11 @@
+
+<a  class="filter-button" ng-repeat="project in pageData.project" href="#/sort-experiment/{{project.id}}" >{{project.id + ' '}}</a>
+
+<br/>
+
+<a  class="filter-button" ng-repeat="filter in filterArray" ng-click="$parent.filterId = filter" ng-class="{active: $parent.filterId == filter}">{{filter + ' '}}</a>
+<div class="circles">
+	<div class="stuff" ng-repeat="obj in projectData.items | filter:filterId" stuff-directive ng-mouseenter="mouseOver()" ng-mouseleave="mouseOut()"><div class="circle"><span class="name">{{obj.title}}</span></div></div>
+</div>
+
+	
