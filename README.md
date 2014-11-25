@@ -2,7 +2,10 @@ bluecadet-apprenticeship
 ========================
 Bluecadet apprentice experimentations
 #### Opening This App
-go into /angular-fun and run:
+  ```
+  $ cd /angular-fun 
+  ```
+  then run:
   ```
   $ npm install
   ```
